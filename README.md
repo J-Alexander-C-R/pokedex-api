@@ -18,11 +18,11 @@ La aplicación funciona como una Pokédex básica, permitiendo buscar Pokémon p
 * Uso: Obtener información de Pokémon.
 * Datos mostrados:
 
-  * Nombre
-  * Imagen
-  * Altura
-  * Peso
-  * Tipo(s)
+   Nombre
+   Imagen
+   Altura
+   Peso
+   Tipo(s)
 
 ### JokeAPI
 
