@@ -34,3 +34,20 @@ function mostrarPokemon(pokemon) {
         <p><strong>Tipo:</strong> ${pokemon.types.map(t => t.type.name).join(", ")}</p>
     `;
 }
+
+const botonChiste = document.getElementById("botonChiste");
+const resultadoChiste = document.getElementById("resultadoChiste");
+
+botonChiste.addEventListener("click", async () => {
+    try {
+        const response = await fetch("https://v2.jokeapi.dev/joke/Any?type=single");
+        const data = await response.json();
+
+        resultadoChiste.textContent = data.joke;
+    } catch (error) {
+        resultadoChiste.textContent = "No se pudo cargar el chiste.";
+    }
+});
+
+
+
